@@ -4,88 +4,136 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gym Coach — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Gym Coach, the adaptive AI training coach by CarvaTech Solutions.">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; max-width: 42rem; padding: 2.5rem 1.25rem 5rem;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #1c2733; background: #ffffff;
+  :root {
+    --navy: #1d283a; --navy-deep: #16202e; --accent: #0da2e7; --accent-dark: #0b8fcc;
+    --ink: #1c2733; --body: #4a5568; --muted: #8494a7; --line: #e3e9f0; --wash: #f0f3f7;
   }
-  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .25rem; }
-  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; }
-  p, li { margin: .55rem 0; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); background: #fff; line-height: 1.65; font-size: 16px; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--accent-dark); }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav img { height: 34px; width: auto; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { color: var(--body); font-size: .95rem; font-weight: 500; text-decoration: none; }
+  .nav-links a:hover { color: var(--ink); }
+  .btn { display: inline-block; padding: .7rem 1.4rem; border-radius: 4px; font-weight: 600;
+         font-size: .95rem; background: var(--accent); color: #fff; text-decoration: none; }
+  .btn:hover { background: var(--accent-dark); }
+
+  .page { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 5.5rem; }
+  .label { color: var(--accent); font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; }
+  h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: -.02em; line-height: 1.15; margin: .7rem 0 .4rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin-bottom: 2.2rem; }
+  .lede { font-size: 1.08rem; color: var(--body); }
+  h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 2.4rem 0 .6rem; }
+  p, li { color: var(--body); margin: .55rem 0; }
   ul { padding-left: 1.3rem; }
-  .meta { color: #6a7480; font-size: .9rem; margin-bottom: 2rem; }
-  .lede { font-size: 1.05rem; }
-  a { color: #067585; }
-  mark { background: #ffe9a8; padding: 0 .2em; border-radius: 3px; }
-  @media (prefers-color-scheme: dark) {
-    body { color: #d7e2ea; background: #10161d; }
-    .meta { color: #8b98a5; }
-    a { color: #4fc6da; }
-    mark { background: #6b5514; color: #ffe9a8; }
-  }
+  strong { color: var(--ink); }
+
+  footer { background: var(--navy-deep); color: #b9c4d4; padding: 2.2rem 0; }
+  .foot { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; flex-wrap: wrap; font-size: .88rem; }
+  .foot img { height: 28px; width: auto; filter: brightness(0) invert(1); }
+  .foot a { color: #b9c4d4; text-decoration: none; }
+  .foot a:hover { color: #fff; }
+  .foot-links a + a { margin-left: 1.4rem; }
+
+  @media (max-width: 900px) { .nav-links { display: none; } }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="meta">Gym Coach, operated by Carva Tech Solutions · Effective July 10, 2026</p>
+<header>
+  <div class="wrap nav">
+    <a href="/"><img src="/assets/logo.png" alt="CarvaTech Solutions"></a>
+    <nav class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#about">About</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/gym-coach/support.html">Support</a>
+    </nav>
+    <a class="btn" href="/#contact">Get Started</a>
+  </div>
+</header>
 
-<p class="lede">Gym Coach is built local-first: your training data lives on your phone, works without an account, and is sent to our servers only when you choose to back it up. We don't run ads, we don't use analytics trackers, and we never sell your data. This page explains exactly what the app collects, where it goes, and how to delete it.</p>
+<main class="page">
+  <div class="label">Gym Coach · Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Gym Coach, operated by Carva Tech Solutions · Effective July 10, 2026</p>
 
-<h2>Data that stays on your phone</h2>
-<p>Everything the app needs works entirely on your device: your training profile (goal, experience, schedule, equipment, and any body areas you asked us to protect), your generated program, your logged workouts, and the coaching engine's decisions. If you never sign in, none of this leaves your phone.</p>
-<p>Conversations with the AI coach are not saved anywhere — not on our servers, and not on your phone. Each conversation exists only while the chat screen is open.</p>
+  <p class="lede">Gym Coach is built local-first: your training data lives on your phone, works without an account, and is sent to our servers only when you choose to back it up. We don't run ads, we don't use analytics trackers, and we never sell your data. This page explains exactly what the app collects, where it goes, and how to delete it.</p>
 
-<h2>Data we store if you create an account</h2>
-<p>Creating an account (used for backup and the AI coach) is optional. You sign in with your email address and a one-time code — there is no password. When you back up, we store on our servers:</p>
-<ul>
-  <li><strong>Your email address</strong>, used only for sign-in codes. No marketing email.</li>
-  <li><strong>Your training profile</strong>: goal, experience level, training days and session length, equipment, units, age range, sex (if provided), height and weight (if provided), protected body areas, and excluded exercises.</li>
-  <li><strong>Your health screening answers</strong>: the short pre-exercise readiness questionnaire you completed during setup, kept as a record that the screening happened.</li>
-  <li><strong>Your program and workout history</strong>: sessions, sets, weights, and the coaching engine's adaptation record — this is what "restore" brings back on a new phone.</li>
-  <li><strong>A monthly count of your AI coach messages</strong> (a number, not the messages), used to apply the fair-use limit.</li>
-</ul>
-<p>Our backend runs on <a href="https://supabase.com/privacy">Supabase</a>, which hosts the database and handles sign-in on our behalf. Data is encrypted in transit, and each account's data is isolated so it can only be read by that account.</p>
+  <h2>Data that stays on your phone</h2>
+  <p>Everything the app needs works entirely on your device: your training profile (goal, experience, schedule, equipment, and any body areas you asked us to protect), your generated program, your logged workouts, and the coaching engine's decisions. If you never sign in, none of this leaves your phone.</p>
+  <p>Conversations with the AI coach are not saved anywhere — not on our servers, and not on your phone. Each conversation exists only while the chat screen is open.</p>
 
-<h2>The AI coach</h2>
-<p>When you send a message to the coach, your message and a summary of your training (your profile, current program, recent workouts, and recent engine decisions) are sent to <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, whose Claude model generates the reply. This happens per message, only when you use the chat. Anthropic processes this data to provide the response and does not use it to train its models. We do not store your messages or the replies.</p>
+  <h2>Data we store if you create an account</h2>
+  <p>Creating an account (used for backup and the AI coach) is optional. You sign in with your email address and a one-time code — there is no password. When you back up, we store on our servers:</p>
+  <ul>
+    <li><strong>Your email address</strong>, used only for sign-in codes. No marketing email.</li>
+    <li><strong>Your training profile</strong>: goal, experience level, training days and session length, equipment, units, age range, sex (if provided), height and weight (if provided), protected body areas, and excluded exercises.</li>
+    <li><strong>Your health screening answers</strong>: the short pre-exercise readiness questionnaire you completed during setup, kept as a record that the screening happened.</li>
+    <li><strong>Your program and workout history</strong>: sessions, sets, weights, and the coaching engine's adaptation record — this is what "restore" brings back on a new phone.</li>
+    <li><strong>A monthly count of your AI coach messages</strong> (a number, not the messages), used to apply the fair-use limit.</li>
+  </ul>
+  <p>Our backend runs on <a href="https://supabase.com/privacy">Supabase</a>, which hosts the database and handles sign-in on our behalf. Data is encrypted in transit, and each account's data is isolated so it can only be read by that account.</p>
 
-<h2>Subscriptions</h2>
-<p>Purchases are processed by Apple through the App Store. We never see your payment details. We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to know whether your subscription is active; it receives your purchase status from Apple, not your payment information. Subscription management and refunds are handled in your Apple account settings.</p>
+  <h2>The AI coach</h2>
+  <p>When you send a message to the coach, your message and a summary of your training (your profile, current program, recent workouts, and recent engine decisions) are sent to <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, whose Claude model generates the reply. This happens per message, only when you use the chat. Anthropic processes this data to provide the response and does not use it to train its models. We do not store your messages or the replies.</p>
 
-<h2>Notifications</h2>
-<p>The weekly check-in reminder is scheduled locally on your device. We don't collect push tokens and can't send you remote notifications.</p>
+  <h2>Subscriptions</h2>
+  <p>Purchases are processed by Apple through the App Store. We never see your payment details. We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to know whether your subscription is active; it receives your purchase status from Apple, not your payment information. Subscription management and refunds are handled in your Apple account settings.</p>
 
-<h2>What we don't do</h2>
-<ul>
-  <li>No advertising, and no advertising identifiers.</li>
-  <li>No third-party analytics or tracking SDKs.</li>
-  <li>No selling or sharing of personal data for marketing.</li>
-  <li>No reading data from Apple Health or other apps.</li>
-</ul>
+  <h2>Notifications</h2>
+  <p>The weekly check-in reminder is scheduled locally on your device. We don't collect push tokens and can't send you remote notifications.</p>
 
-<h2>Retention and deletion</h2>
-<p>We keep your backed-up data for as long as your account exists. You can delete your account at any time inside the app (Profile → Backup &amp; sync → Delete account). Deletion is immediate and permanent: your account and all backed-up data — profile, screening answers, history, and usage counts — are removed from our servers. The data on your phone stays on your phone until you delete the app or start over.</p>
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No advertising, and no advertising identifiers.</li>
+    <li>No third-party analytics or tracking SDKs.</li>
+    <li>No selling or sharing of personal data for marketing.</li>
+    <li>No reading data from Apple Health or other apps.</li>
+  </ul>
 
-<h2>Children</h2>
-<p>Gym Coach is not directed at children under 13, and we do not knowingly collect data from them. If you believe a child has created an account, contact us and we will delete it.</p>
+  <h2>Retention and deletion</h2>
+  <p>We keep your backed-up data for as long as your account exists. You can delete your account at any time inside the app (Profile → Backup &amp; sync → Delete account). Deletion is immediate and permanent: your account and all backed-up data — profile, screening answers, history, and usage counts — are removed from our servers. The data on your phone stays on your phone until you delete the app or start over.</p>
 
-<h2>Where data is processed</h2>
-<p>Our servers and service providers are located in the United States. If you use the app from elsewhere, your backed-up data is transferred to and processed there.</p>
+  <h2>Children</h2>
+  <p>Gym Coach is not directed at children under 13, and we do not knowingly collect data from them. If you believe a child has created an account, contact us and we will delete it.</p>
 
-<h2>Your rights</h2>
-<p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data. The app covers the common ones directly — restore gives you a copy of your data, and account deletion removes it — and you can contact us for anything else. We will respond to any request at the address below.</p>
+  <h2>Where data is processed</h2>
+  <p>Our servers and service providers are located in the United States. If you use the app from elsewhere, your backed-up data is transferred to and processed there.</p>
 
-<h2>A note on health</h2>
-<p>Gym Coach provides fitness programming, not medical advice. The screening questionnaire exists to prompt you to check with a doctor when that's the right call — please take that prompt seriously.</p>
+  <h2>Your rights</h2>
+  <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data. The app covers the common ones directly — restore gives you a copy of your data, and account deletion removes it — and you can contact us for anything else. We will respond to any request at the address below.</p>
 
-<h2>Changes to this policy</h2>
-<p>If we change what data we collect or how we use it, we will update this page and change the date at the top. Material changes will be called out in the app.</p>
+  <h2>A note on health</h2>
+  <p>Gym Coach provides fitness programming, not medical advice. The screening questionnaire exists to prompt you to check with a doctor when that's the right call — please take that prompt seriously.</p>
 
-<h2>Contact</h2>
-<p>Questions or requests: <a href="mailto:support@carvatechsolutions.com">support@carvatechsolutions.com</a></p>
+  <h2>Changes to this policy</h2>
+  <p>If we change what data we collect or how we use it, we will update this page and change the date at the top. Material changes will be called out in the app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:support@carvatechsolutions.com">support@carvatechsolutions.com</a></p>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="/"><img src="/assets/logo.png" alt="CarvaTech Solutions"></a>
+    <span>© 2026 CarvaTech Solutions. All rights reserved.</span>
+    <span class="foot-links">
+      <a href="/gym-coach/support.html">Support</a>
+      <a href="mailto:support@carvatechsolutions.com">Contact</a>
+    </span>
+  </div>
+</footer>
 
 </body>
 </html>
