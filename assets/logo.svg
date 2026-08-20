@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 32" width="250" height="32" role="img" aria-label="CarvaTech Solutions">
+  <g fill="none" stroke="#16A9F0" stroke-width="4.2" stroke-linecap="square">
+    <g opacity=".5">
+      <path d="M2.1 6.6H18"/>
+      <path d="M2.1 25.4H18"/>
+      <path d="M2.1 16H30.5"/>
+    </g>
+    <path d="M23 3.4 34.6 16 23 28.6" stroke-linejoin="miter"/>
+  </g>
+  <text x="46" y="16.5" font-family="'Space Grotesk',Inter,-apple-system,'Segoe UI',sans-serif" font-size="15.5" font-weight="700" letter-spacing="-.45" fill="#F1F6FC">Carva<tspan font-weight="500" fill="#97A6BC">Tech</tspan></text>
+  <text x="46.6" y="27" font-family="'JetBrains Mono',ui-monospace,Menlo,monospace" font-size="6" font-weight="500" letter-spacing="2.3" fill="#63748C">SOLUTIONS</text>
+</svg>
