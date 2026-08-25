@@ -62,6 +62,8 @@
     <li><strong>Your health screening answers</strong>: the short pre-exercise readiness questionnaire you completed during setup, kept as a record that the screening happened.</li>
     <li><strong>Your program and workout history</strong>: sessions, sets, weights, and the coaching engine's adaptation record — this is what "restore" brings back on a new phone.</li>
     <li><strong>A monthly count of your AI coach messages</strong> (a number, not the messages), used to apply the fair-use limit.</li>
+    <li><strong>Your device's push token</strong>, used only to send the re-engagement reminder described under Notifications. Removed when you delete your account.</li>
+    <li><strong>Your language setting</strong>, so that reminder is written in the right language.</li>
   </ul>
   <p>Our backend runs on <a href="https://supabase.com/privacy">Supabase</a>, which hosts the database and handles sign-in on our behalf. Data is encrypted in transit, and each account's data is isolated so it can only be read by that account.</p>
 
@@ -72,7 +74,9 @@
   <p>Purchases are processed by Apple through the App Store. We never see your payment details. We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to know whether your subscription is active; it receives your purchase status from Apple, not your payment information. Subscription management and refunds are handled in your Apple account settings.</p>
 
   <h2>Notifications</h2>
-  <p>The weekly check-in reminder is scheduled locally on your device. We don't collect push tokens and can't send you remote notifications.</p>
+  <p>Two reminders are scheduled locally on your device: a weekly check-in, and a nudge for your next training day. Both work without an account, and nothing about them leaves your phone.</p>
+  <p>We send one kind of remote notification. If you have an account, your device's push token is stored with your profile when you back up, so we can reach you. We use it for a single purpose: if you have trained and then gone quiet for ten days or more, we send one reminder that your plan is still there. It is capped at one message per thirty days, and we stop sending it once you have been inactive for sixty days. Your language setting is stored alongside it so the message is written in your language.</p>
+  <p>We send no marketing, promotional, or streak-based notifications. You can turn notifications off for Gym Coach at any time in your device's settings, and deleting your account removes the stored push token along with the rest of your data.</p>
 
   <h2>What we don't do</h2>
   <ul>
