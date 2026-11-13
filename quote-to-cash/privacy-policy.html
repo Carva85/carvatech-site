@@ -46,7 +46,7 @@
 <main class="page">
   <div class="label">Quote to Cash · Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Quote to Cash, operated by Carva Tech Solutions LLC · Effective August 24, 2026</p>
+  <p class="meta">Quote to Cash, operated by Carva Tech Solutions LLC · Effective November 13, 2026</p>
 
   <p class="lede">Quote to Cash is a tool contractors use to quote work, get it agreed, and invoice for it. We don't run ads, we don't use analytics or third-party trackers, and we never sell personal information. This page explains what we collect from contractors, what we hold about their customers, who else receives it, and how long any of it lasts.</p>
 
@@ -74,16 +74,19 @@
 
   <h2>What we do not collect</h2>
   <p>No analytics. No advertising identifiers. No third-party trackers. No location. No access to contacts. We do not sell personal information, we do not share it for advertising, and nothing in this app tracks you across other apps or websites.</p>
-  <p>The app asks for camera and photo library access only when a contractor attaches a photograph to a job. Those images go to our servers and nowhere else.</p>
+  <p>The app asks for camera and photo library access only when a contractor attaches a photograph to a job. Those images go to our servers. The one exception is "Draft with AI": if you choose to add photos to an AI draft, up to three are sent to Anthropic for that draft (see below).</p>
+  <p>Speech-to-text on the job description uses Apple's on-device recognizer. Audio stays on your phone; only the text it produces is used, and only after you can read and change it.</p>
 
   <h2>Who else receives data</h2>
   <ul>
     <li><strong>Stripe</strong> — card details, entered by the customer directly into Stripe, plus the invoice amount and reference. Used to take card payments and to pay contractors out.</li>
     <li><strong>Resend</strong> — recipient address and message content, to send quotes, invoices, reminders and codes.</li>
     <li><strong>RevenueCat and Apple</strong> — App Store subscription events and an opaque business identifier, to run subscriptions bought inside the app.</li>
+    <li><strong>Anthropic</strong> — only when you choose "Draft with AI": the job description you type, your answers to follow-up questions, the names of items in your price book, the wording (not prices or quantities) of up to 60 lines from your earlier quotes, and up to three photos you add. Not prices, and not customer details unless you type them into the description. Used to draft a quote, and for nothing else.</li>
     <li><strong>Railway</strong> — hosting, and everything above at rest.</li>
     <li><strong>Cloudflare R2</strong> — encrypted database backups, for disaster recovery.</li>
   </ul>
+  <p><strong>AI drafting is optional.</strong> Nothing goes to Anthropic unless you tap "Draft with AI", agree on the screen that names Anthropic, and send a description. Photos are resized and stripped of location and camera details on your phone first, are held in memory for the request, and are not stored by us. We keep the description, your answers and the draft until you delete your account, and a record of when you agreed. Anthropic deletes what we send it from its own systems automatically within 30 days, and does not train its models on it. Two exceptions, both from Anthropic's terms: content its systems flag as breaking its usage policy can be kept for up to 2 years, and anything the law requires it to keep.</p>
   <p><strong>Card numbers never reach our servers.</strong> They are collected by Stripe in your own browser. We see that a payment succeeded and for how much.</p>
   <p>The identifier we send RevenueCat is a random business id, not an email or a name.</p>
 
