@@ -46,7 +46,7 @@
 <main class="page">
   <div class="label">Quote to Cash · Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Quote to Cash, operated by Carva Tech Solutions LLC · Effective November 13, 2026</p>
+  <p class="meta">Quote to Cash, operated by Carva Tech Solutions LLC · Effective November 19, 2026</p>
 
   <p class="lede">Quote to Cash is a tool contractors use to quote work, get it agreed, and invoice for it. We don't run ads, we don't use analytics or third-party trackers, and we never sell personal information. This page explains what we collect from contractors, what we hold about their customers, who else receives it, and how long any of it lasts.</p>
 
@@ -58,7 +58,7 @@
   <ul>
     <li><strong>Your account.</strong> Name and email address. Your password is stored only as a scrypt hash — we cannot read it and never see it in the clear.</li>
     <li><strong>Your business.</strong> Trading and legal name, address, phone, email, tax identifier and logo. These are printed on the documents you send, which is the reason we hold them.</li>
-    <li><strong>Your sessions.</strong> A session token and the browser or device description your app sent, so you can recognise and end a session you don't recognise.</li>
+    <li><strong>Your sessions.</strong> A session token and the browser or device description your app sent, so you can recognise and end a session you don't recognise. In the web app the token is kept in your browser's local storage until you sign out.</li>
     <li><strong>Verification and reset codes.</strong> Hashed, short-lived and single-use.</li>
   </ul>
 
@@ -82,13 +82,31 @@
     <li><strong>Stripe</strong> — card details, entered by the customer directly into Stripe, plus the invoice amount and reference. Used to take card payments and to pay contractors out.</li>
     <li><strong>Resend</strong> — recipient address and message content, to send quotes, invoices, reminders and codes.</li>
     <li><strong>RevenueCat and Apple</strong> — App Store subscription events and an opaque business identifier, to run subscriptions bought inside the app.</li>
+    <li><strong>Intuit (QuickBooks Online)</strong> — only when the account owner connects QuickBooks: the customers, invoices and payments described under "QuickBooks Online" below, sent to the one company they chose, to keep their books in step with their jobs.</li>
     <li><strong>Anthropic</strong> — only when you choose "Draft with AI": the job description you type, your answers to follow-up questions, the names of items in your price book, the wording (not prices or quantities) of up to 60 lines from your earlier quotes, and up to three photos you add. Not prices, and not customer details unless you type them into the description. Used to draft a quote, and for nothing else.</li>
     <li><strong>Railway</strong> — hosting, and everything above at rest.</li>
     <li><strong>Cloudflare R2</strong> — encrypted database backups, for disaster recovery.</li>
   </ul>
   <p><strong>AI drafting is optional.</strong> Nothing goes to Anthropic unless you tap "Draft with AI", agree on the screen that names Anthropic, and send a description. Photos are resized and stripped of location and camera details on your phone first, are held in memory for the request, and are not stored by us. We keep the description, your answers and the draft until you delete your account, and a record of when you agreed. Anthropic deletes what we send it from its own systems automatically within 30 days, and does not train its models on it. Two exceptions, both from Anthropic's terms: content its systems flag as breaking its usage policy can be kept for up to 2 years, and anything the law requires it to keep.</p>
+  <p><strong>QuickBooks Online is optional.</strong> See the section below.</p>
   <p><strong>Card numbers never reach our servers.</strong> They are collected by Stripe in your own browser. We see that a payment succeeded and for how much.</p>
   <p>The identifier we send RevenueCat is a random business id, not an email or a name.</p>
+
+  <h2 id="quickbooks">QuickBooks Online (optional)</h2>
+  <p>If you connect QuickBooks Online, we send your books the work you do here. Connecting is optional and is done by the account owner, through Intuit's own sign-in page: we never see your QuickBooks password.</p>
+  <p><strong>What we ask permission for.</strong> The accounting data of the one QuickBooks company you choose, and nothing else. We do not ask for payments, payroll or profile permissions.</p>
+  <p><strong>What we send to your QuickBooks company.</strong></p>
+  <ul>
+    <li>Your customers: name, business name, email, phone, billing address, and whether they are tax-exempt.</li>
+    <li>Your invoices: number, dates, line items, discount, tax and total, and a private note holding the link to the invoice page.</li>
+    <li>The payments recorded against those invoices: amount, date, and how it was paid.</li>
+  </ul>
+  <p>Only invoices issued after you connect are sent. The private notes you keep on a customer are never sent. A refund, credit note, void or write-off made here is not sent either: we tell you in Settings so you can record it in QuickBooks the way your bookkeeper prefers.</p>
+  <p><strong>What we read from QuickBooks.</strong> The company's name, its income accounts, its items and whether it charges sales tax. We look customers up by name so we do not create one that is already there. We add two items to your company to post to, "Quote to Cash services" and "Quote to Cash sales tax". We do not copy your other QuickBooks data into Quote to Cash.</p>
+  <p><strong>What we keep.</strong> Your company's id and name; the access tokens Intuit gives us, which are stored encrypted; a record of which of your records became which QuickBooks record, so nothing is sent twice; and a short list of anything we could not send.</p>
+  <p><strong>How it runs.</strong> Once connected it syncs by itself every hour. You can pause that in Settings, or send what is new at any time with "Sync now".</p>
+  <p><strong>Disconnecting.</strong> Settings → Integrations → Disconnect asks Intuit to withdraw our access and deletes the tokens we hold. Anything already in QuickBooks stays there. You can also remove our access from within QuickBooks. We keep the record of what was sent so that reconnecting does not send things twice; deleting your account deletes it.</p>
+  <p>What is in QuickBooks is covered by Intuit's own privacy statement.</p>
 
   <h2>How long we keep it</h2>
   <p>While an account is open, for as long as it is open — a contractor's records are their business records.</p>
@@ -136,6 +154,7 @@
     <span>© 2026 CarvaTech Solutions LLC. All rights reserved.</span>
     <span class="foot-links">
       <a href="/quote-to-cash/privacy-policy.html">Privacy Policy</a>
+      <a href="/quote-to-cash/terms.html">Terms</a>
       <a href="/quote-to-cash/support.html">Support</a>
       <a href="mailto:support@carvatechsolutions.com">Contact</a>
     </span>
